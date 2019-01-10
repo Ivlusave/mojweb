@@ -1,0 +1,344 @@
+/*.header {
+	height: 500px;
+	background: url('img/header_bg.jpg');
+	background-size: cover;
+}
+.header a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18pt;
+	text-transform:uppercase;
+	margin: 40px 0 0 40px;
+	font-family: 'Pacifico', cursive;
+}
+.header p {
+	color: #fff;
+	font-size: 24pt;
+	text-align: center;
+	margin-top: 200px;
+	font-family: 'Dancing Script', cursive;
+}*/
+
+/*@media screen and (max-width: 575px){
+	.zaglavlje {
+		height: 250px;
+	}
+	.zaglavlje p {
+		display:none;
+	}
+	.zaglavlje a{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 0;
+		font-size: 18pt;
+		}
+	.slider {
+		display: none;
+	}
+	
+	.galerija .slika .maska p{
+		font-size: 14pt;
+	}
+	}	
+	*/
+body {
+	background: url('slike/leaves_pattern.png');
+}
+
+.navigacija {
+	height: 100px;
+	background-color: #F89B63;
+}
+
+.navigacija li {
+	display: inline;
+	list-style-type: none; 
+	margin-right: 60px;
+}
+
+.navigacija li a {      
+	line-height: 100px;
+	color: #000;
+	text-decoration: none;
+	font-size: 24pt;
+	text-align: right;
+	margin-top: 200px;
+	font-family: 'Pacifico', cursive;
+	
+}
+
+.navigacija li a:hover {
+	color: white;
+}
+
+.hamburger {
+	text-align: right;
+	font-size: 24pt;
+	line-height: 100px;
+	padding-right: 40px;
+	display: none;
+	
+}
+
+@media screen and (max-width: 760px) {
+	.hamburger {
+		display: block;
+	}
+	/*.main-menu {
+		display: none; 
+	} */
+	
+	.main-menu li {
+		display: block;
+		background-color: #F1C40F;
+		
+	}
+	.navigacija {
+		height: auto;
+	}
+}
+
+@media screen and (min-width:761px) {
+	.main-menu {
+		display: block!important;
+	}
+}	
+
+.galerija h1 {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 24 pt;
+	font-family: 'Pacifico' , cursive;
+	text-align: center;
+}
+.galerija .col-6 {
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	
+}	
+
+.galerija .slika .maska {
+	background-color: black;
+	position:absolute;
+	top: 0;
+	right:0;
+	left:0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}	
+
+.galerija .slika:hover .maska {
+	opacity:0.7;
+}	
+
+.galerija .slika .maska p {
+	font-size: 18pt;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}	
+
+.galerija .slika .maska p a {
+	color: white;
+	text-decoration:none;
+	font-family: 'Dancing Script', cursive;
+	
+}
+.galerija .slika {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*@media screen and (max-width: 575px){
+	.galerija .slika .maska p{
+		font-size: 14pt;
+	}
+	}	
+	*/
+
+.slider .col {
+	padding-left: 0;
+	padding-right:0;
+}
+
+.kontakt {
+
+	/*background-color: #81332C;*/
+	background: url('kontakt.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px 30px;
+	
+}	
+	
+.kontakt input [type=text],
+.kontakt input [type=email],
+.kontakt textarea {
+	border: 0;
+	border-radius: 0;
+}
+
+.kontakt button [type=submit] {
+	background-color: #000;
+	border: 0;
+	border-radius: 0;
+}
+
+
+.kontakt label {
+	font-size: 16pt;
+	font-family: 'Pacifico', cursive;
+}
+
+.kontakt h1 {
+	font-size: 24pt;
+	font-family: 'Pacifico';
+	padding-bottom: 30px;
+}
+
+.footer {
+	height: 250px;
+	background: url('Footer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}	
+
+.footer ul li {
+	display: inline;
+	margin-right: 30px;
+}
+
+.footer ul {
+	/*text-align: right;
+	margin-top: 300px;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.footer li a {
+	color: white;
+	font-size: 18pt;
+	/*text-decoration: none;*/
+	font-family: 'Pacifico', cursive;
+}
+
+.footer p {
+	color:white;
+	font-size: 10pt;
+	font-family: 'Pacifico', bold;
+	width: 100%;
+	text-align: center;
+	margin:0;
+	margin-top: 180px;
+	padding: 0;
+}
+
+
+/* O meni / početak */
+.o-meni h1 {
+	text-align: center;
+}
+.o-meni p {
+	text-align: center;
+	}
+.vjestine h1 {
+	text-transform: uppercase;
+	font-size: 24pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.vjestina {
+	height: 250px;
+}
+.vjestina.svijetlo-smeđa {
+	background-color: #A5603D;
+}
+.vjestina.tamno-smeđa {
+	background-color: #F89B63;
+}
+@media screen and (max-width:767px) {
+	.vjestina:nth-child(odd) {
+		background-color: #F0F0F0;
+	}
+	.vjestina:nth-child(even) {
+		background-color: #E0E0E0;
+	}
+	.o-meni p:nth-child(1) {
+		margin-top: 40px;
+	}
+}
+.vjestina p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14pt;
+}
+.no-spacing {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* O meni / kraj*/
+
+/* Društvene mreže / početak */
+.social-profiles h1 {
+	text-transform: uppercase;
+	font-size: 24pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.social-profile {
+	height: 300px;
+	padding-bottom: 45px;
+}
+.social-profile.svijetlo-zelena {
+	background-color: #D7FFF1;
+}
+.social-profile.tamno-zelena {
+	background-color: #8CD790;
+}
+@media screen and (max-width:767px) {
+	.social-profile:nth-child(odd) {
+		background-color: #F0F0F0;
+	}
+	.social-profile:nth-child(even) {
+		background-color: #E0E0E0;
+	}
+}
+.social-profile p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 32pt;
+}
+.social-profile p a {
+	color: #000;
+	text-decoration: none;
+}
+/*Društvene mreže / kraj */
+
+
+
+
+
+
+
